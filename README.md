@@ -76,12 +76,28 @@ The Feature Branch Workflow builds on the Centralized Workflow by encapsulating 
 Instead of using a single server-side repository to act as the “central” codebase, forking gives every developer a server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one.
 
 ### Gitflow workflow
+The Gitflow Workflow streamlines the release cycle by using isolated branches for feature development, release preparation, and maintenance. Its strict branching model also lends some much needed structure to larger projects.
 
 ### HEAD
+Git’s way of referring to the current snapshot. Internally, the git checkout command simply updates the HEAD to point to either the specified branch or commit. When it points to a branch, Git doesn't complain, but when you check out a commit, it switches into a “detached HEAD” state.
+
 ### Hook
+A script that runs automatically every time a particular event occurs in a Git repository. Hooks let you customize Git’s internal behavior and trigger customizable actions at key points in the development life cycle.
+
 ### Main
+The default development branch. Whenever you create a git repository, a branch named "main" is created, and becomes the active branch.
+
 ### Pull request
+Is an event that takes place in software development when a contributor/developer is ready to begin the process of merging new code changes with the main project repository.
+
 ### Repository
+A collection of commits, and branches and tags to identify commits.
+
 ### Tag
+A reference typically used to mark a particular point in the commit chain. In contrast to a head, a tag is not updated by the commit command.
+
 ### Version Control
+A system that records changes to a file or set of files over time so that you can recall specific versions later.
+
 ### Working Tree
+The tree of actual checked out files, normally containing the contents of the HEAD commit's tree and any local changes you've made but haven't yet committed.
